@@ -1,0 +1,46 @@
+{
+    "name": "reusable-address-iota",
+    "version": "0.0.1",
+    "description": "Demo implementation of reusable addresses with IOTA",
+    "main": "./build/index.js",
+    "typings": "typings",
+    "scripts": {
+        "prepare": "tsc",
+        "build": "tsc",
+        "mam": "ts-node test/mam-leaf-test.ts",
+        "test": "ts-node tests/test.ts",
+        "timewarp": "ts-node test/timewarp.ts",
+        "tsc": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ovanwijk/reusable-address-iota.git"
+    },
+    "keywords": [
+        "iota"
+    ],
+    "author": "Olaf van Wijk",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/ovanwijk/reusable-address-iota/issues"
+    },
+    "homepage": "https://github.com/ovanwijk/reusable-address-iota#readme",
+    "dependencies": {
+        "@iota/converter": "^1.0.0-beta.11",
+        "@iota/core": "^1.0.0-beta.11",
+        "@iota/kerl": "^1.0.0-beta.11",
+        "@iota/transaction-converter": "^1.0.0-beta.11",
+        "crypto-js": "^3.1.9-1",
+        "merkletreejs": "^0.1.7",
+        "ts-node": "^8.0.2"
+    },
+    "devDependencies": {
+        "typescript": "^3.3.3333",
+        "@types/node": "^10.11.7",
+        "ts-node-dev": "^1.0.0-pre.32",
+        "@types/bluebird": "^3.5.26"
+    },
+    "resolutions": {
+        "@types/bluebird": "3.5.26"
+    }
+}
